@@ -20,6 +20,8 @@ swiftc -O \
 
 echo ">>> assembling bundle"
 cp Resources/Info.plist "$APP/Contents/Info.plist"
+cp Resources/AIKana.icns Resources/AIKana.tiff "$APP/Contents/Resources/" 2>/dev/null || true
+cp -R Resources/*.lproj "$APP/Contents/Resources/" 2>/dev/null || true
 printf 'APPL????' > "$APP/Contents/PkgInfo"
 
 echo ">>> ad-hoc code signing"
