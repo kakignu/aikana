@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>AIKana</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.kakinuma.inputmethod.AIKana</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>AIかな</string>
+    <key>CFBundleDisplayName</key>
+    <string>AIかな</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSBackgroundOnly</key>
+    <true/>
+    <key>NSHumanReadableCopyright</key>
+    <string>AIかな IME</string>
+
+    <key>InputMethodConnectionName</key>
+    <string>AIKana_1_Connection</string>
+    <key>InputMethodServerControllerClass</key>
+    <string>RomajiInputController</string>
+    <key>tsInputMethodCharacterRepertoireKey</key>
+    <array>
+        <string>Latn</string>
+    </array>
+
+    <key>ComponentInputModeDict</key>
+    <dict>
+        <key>tsInputModeListKey</key>
+        <dict>
+            <key>com.kakinuma.inputmethod.AIKana.Japanese</key>
+            <dict>
+                <key>TISInputSourceID</key>
+                <string>com.kakinuma.inputmethod.AIKana.Japanese</string>
+                <key>TISIntendedLanguage</key>
+                <string>ja</string>
+                <key>tsInputModeAlphabetKey</key>
+                <string>TISTypeKeyboardLayout</string>
+                <key>tsInputModeIsVisibleKey</key>
+                <true/>
+                <key>tsInputModeKeyEquivalentKey</key>
+                <string></string>
+                <key>tsInputModeKeyEquivalentModifiersKey</key>
+                <integer>0</integer>
+                <key>tsInputModePrimaryInScriptKey</key>
+                <true/>
+                <key>tsInputModeScriptKey</key>
+                <string>smJapanese</string>
+                <key>tsInputModeSuperScriptKey</key>
+                <integer>0</integer>
+                <key>tsVisibleInputModeOrderKey</key>
+                <integer>0</integer>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>

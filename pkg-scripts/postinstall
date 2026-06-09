@@ -1,0 +1,16 @@
+#!/bin/bash
+# Runs as root after the payload is placed in /Library/Input Methods.
+# Launch the input method once as the logged-in user so macOS registers the
+# input source and it shows up in System Settings without a logout.
+APP="/Library/Input Methods/AIKana.app"
+
+uid=$(stat -f%u /dev/console 2>/dev/null || echo "")
+user=$(stat -f%Su /dev/console 2>/dev/null || echo "")
+
+killall AIKana 2>/dev/null || true
+
+if [ -n "$uid" ] && [ "$user" != "root" ] && [ -x "$APP/Contents/MacOS/AIKana" ]; then
+    launchctl asuser "$uid" sudo -u "$user" "$APP/Contents/MacOS/AIKana" >/tmp/aikana.log 2>&1 &
+fi
+
+exit 0
