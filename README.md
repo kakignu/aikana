@@ -40,7 +40,7 @@ Ollama を使う場合は `config.json` の `endpoint` と `model` を上記に�
 ./build.sh      # build/AIKana.app を生成（swiftc + ad-hoc 署名）
 ./install.sh    # ~/Library/Input Methods にコピーして登録用に起動
 # もしくは
-./make-pkg.sh   # dist/AIKana-0.1.pkg を生成
+./make-pkg.sh   # dist/AIKana-0.2.pkg を生成（/Library/Input Methods へシステム導入）
 ```
 
 ### 有効化（A/B共通）
